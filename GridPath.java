@@ -6,6 +6,21 @@ public class GridPath {
         grid = values;
     }
 
+    public String toString()
+    {
+        String s = "";
+        for(int row = 0; row < grid.length; row++ )
+        {
+            for( int col = 0; col < grid[0].length; col++) 
+            {
+                s += grid[row][col] + "";
+            }
+            s += "\n";
+        }
+        return s;
+    }
+
+
     /**
      * Returns the Location representing a neighbor of the grid element at row and
      * col,
@@ -17,6 +32,8 @@ public class GridPath {
      */
     public Location getNextLoc(int row, int col) 
     {
+        int below = grid[row + 1][col];
+        int above = grid[row][col +1];
         return null;
         /* to be implemented in part (a) */ 
     }
