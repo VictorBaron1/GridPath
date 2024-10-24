@@ -13,7 +13,7 @@ public class GridPath {
         {
             for( int col = 0; col < grid[0].length; col++) 
             {
-                s += grid[row][col] + "";
+                s += grid[row][col] + " ";
             }
             s += "\n";
         }
